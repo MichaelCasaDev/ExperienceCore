@@ -1,0 +1,33 @@
+name: ${project.name}
+version: ${project.version}
+main: me.michaeldevc.experiencecore.Cores
+api-version: 1.16
+description: ${project.description}
+author: MichaelDevC_
+depend: [EZColors, DeluxeChat, Essentials]
+commands:
+  experiencecore:
+    description: MadeByMichaelDevC
+  cavaliere:
+    description: MadeByMichaelDevC
+
+  msg:
+    description: MadeByMichaelDevC
+  r:
+    description: MadeByMichaelDevC
+  tpa:
+    aliases: [ call,ecall,etpa,tpask,etpask ]
+    description: MadeByMichaelDevC
+  tpahere:
+    aliases: [ etpahere ]
+    description: MadeByMichaelDevC
+  chat:
+    description: MadeByMichaelDevC
+  cestino:
+    description: MadeByMichaelDevC
+  meteo:
+    description: MadeByMichaelDevC
+  libroclaim:
+    description: MadeByMichaelDevC
+  autoriavvio:
+    description: MadeByMichaelDevC

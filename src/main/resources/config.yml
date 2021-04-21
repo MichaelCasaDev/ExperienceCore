@@ -1,0 +1,223 @@
+################################
+# ExperienceCore v${project.version}
+# A multi-purpose Plugin to manage your Minecraft server!
+#
+# By MichaelDevC_#0360
+#
+#
+# All rights reserved | 2021 MichaelDevC_
+################################
+
+
+
+
+#################################################################################
+#   ______                      _                      _____                    #
+#  |  ____|                    (_)                    / ____|                   #
+#  | |__  __  ___ __   ___ _ __ _  ___ _ __   ___ ___| |     ___  _ __ ___      #
+#  |  __| \ \/ / '_ \ / _ \ '__| |/ _ \ '_ \ / __/ _ \ |    / _ \| '__/ _ \     #
+#  | |____ >  <| |_) |  __/ |  | |  __/ | | | (_|  __/ |___| (_) | | |  __/     #
+#  |______/_/\_\ .__/ \___|_|  |_|\___|_| |_|\___\___|\_____\___/|_|  \___|     #
+#              | |                                                              #
+#              |_|                                                              #
+#################################################################################
+
+################################
+# >>> Permissions <<<
+#
+# experiencecore.help
+#
+# experiencecore.secureblockbypass
+# experiencecore.admin
+#
+# experiencecore.chat.use
+# experiencecore.chat.everyone
+#
+# experiencecore.xraytp
+# experienceVip.Cavaliere
+################################
+
+
+
+################################
+# Staff List
+################################
+
+Staff:
+  - "Aepuova"
+  - "New1"
+
+
+################################
+# Blocks to report (When BREAK)
+################################
+
+Blocks:
+  - "STONE"
+  - "OBSIDIAN"
+  - "TNT"
+
+
+################################
+# Emergency
+################################
+Emergency:
+  Duration: 10 #seconds
+  TitleStay: 100 #ticks
+  Values:
+    ViewDistance:
+      Tick: 2
+      NoTick: 2
+    Spawning:
+      Animals: 2
+      Mobs: 2
+  BossBar: "&4Emergency Mode Activated!"
+  BroadcastMessage:
+    Enabling:
+      MainTitle: "&1Emergency mode on! %seconds%"
+      SubTitle: "&1 Emergency will be of in %seconds% seconds"
+      Audio:
+        enabled: true
+        sound: "ENTITY_VILLAGER_HURT"
+        volume: 1
+        pitch: 1
+    Disabling:
+      MainTitle: "&1Emergency mode off!"
+      SubTitle: "&1Thanks for patience..."
+      Audio:
+        enabled: true
+        sound: "ENTITY_VILLAGER_HURT"
+        volume: 1
+        pitch: 1
+
+
+################################
+# Chat Utils
+################################
+
+Chat:
+  No_Color: "&7"
+  Default:
+    Prefix: "&5@"
+    Audio:
+      enable: true
+      sound: "ENTITY_VILLAGER_HURT"
+      volume: 1
+      pitch: 1
+  Everyone:
+    Prefix: "&c@"
+    Audio:
+      enable: true
+      sound: "ENTITY_VILLAGER_HURT"
+      volume: 1
+      pitch: 1
+  R:
+    Audio:
+      enable: true
+      sound: "ENTITY_VILLAGER_HURT"
+      volume: 1
+      pitch: 1
+  Tpa:
+    Audio:
+      enable: true
+      sound: "ENTITY_VILLAGER_HURT"
+      volume: 1
+      pitch: 1
+
+
+################################
+# ViewDistance
+################################
+
+ViewDistance:
+  Message: "&1ViewDistance %type% set to %value%"
+  NoArgs: "&1No valid arguments!"
+
+
+################################
+# SelfToggles
+################################
+
+SelfTogglesMessages:
+  Activated: "&1selftoggles activated!"
+  Deactivated: "&1selftoggles deactivated!"
+
+SelfTogglesValues:
+  85:
+    Tick: 3
+    NoTick: 6
+
+    Monsters: 10
+    Animals: 3
+  95:
+    Tick: 3
+    NoTick: 4
+
+    Monsters: 10
+    Animals: 3
+  100:
+    Tick: 2
+    NoTick: 3
+
+    Monsters: 10
+    Animals: 3
+  115:
+    Tick: 2
+    NoTick: 3
+
+    Monsters: 6
+    Animals: 3
+
+
+################################
+# Messages
+################################
+
+StaffMessages:
+  Break: "&1The player %player% has broke the block %block% at %x%X %y%Y %z%Z"
+  #Hover: "&1Clicca per teletrasportati e spectare il player in questione" # No work
+  #Teleport: "&1Ti sto teletrasportando dal player incriminato" # No work
+  Audio:
+    enable: true
+    sound: "ENTITY_VILLAGER_HURT"
+    volume: 1
+    pitch: 1
+
+
+Cavaliere:
+  Walk:
+    Set: "&1Walk speed set to %value%"
+    Clear: "&1Walk speed removed"
+  Fly:
+    Set: "&1Fly speed set to %value%"
+    Clear: "&1Fly speed removed"
+  Haste:
+    Activate: "&1Haste value set to %value%"
+    Deactivate: "&1Haste removed"
+    Info: "&1Use comand /haste < 1 | 2 | 3 > to enable haste /haste rimuovi to disable!"
+  Info: "&1Info cavaliere"
+
+
+EntitySpawningMessages:
+  Mobs: "Mobspawning set to %amount%"
+  Animals: "Animalspawning set to %amount%"
+  Disabled_Mobs: "Mobspawning disabled!"
+  Disabled_Animals: "Animalspawning disabled!"
+
+EntityInfoMessages:
+  Header: "Entities:"
+
+Thanos:
+  MainTitle: "Thanos used"
+  SubTitle: "The 50% of entities have been removed!"
+  Audio:
+    enable: true
+    sound: "ENTITY_VILLAGER_HURT"
+    volume: 1
+    pitch: 1
+
+
+DefaultMessage: "&1Hei that''s the experience core!"
+ErrorMessage: "&1Syntax error!"
+Reload: "&1Plugin reloaded!"
+NoPermissions: "&1You don''t have the permission to run that command!"
